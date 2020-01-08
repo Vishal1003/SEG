@@ -5,8 +5,10 @@ import EEG as eg
 import pandas as pd
 
 
+
 def index(request):
     return render(request, 'index.html')
+
 
 def register(request):
     return render(request, 'form.html')
@@ -26,7 +28,11 @@ def data(request):
 def user(request):
     fname = request.GET['fname']
     lname = request.GET['lname']
-    return render(request, 'data.html',{'fname': fname, 'lname':lname})
+    email = request.GET['email']
+    age = request.GET['age']
+    gender = request.GET['gender']
+    phone = request.GET['phone']
+    return render(request, 'data.html', {'fname': fname, 'lname': lname, 'email': email, 'age': age, 'gender': gender, 'phone': phone})
 
 
 def upload(request):
@@ -35,6 +41,8 @@ def upload(request):
         uploaded_file = request.FILES['document']
         fs = FileSystemStorage()
         name = fs.save(uploaded_file.name, uploaded_file)
-        context['url'] = fs.url(name)
-        eg.predict(pd.read_csv(url))
-    return render(request, 'result.html', context)
+        url = fs.url(name)
+        context['url'] = url
+        data = eg.predict(pd.read_csv("/home/sjsingh/Desktop/UI/"+url))
+        print(data)
+    return render(request, 'result.html',{'data': data})

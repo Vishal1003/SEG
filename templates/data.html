@@ -208,14 +208,14 @@
               <hr>
               <hr>
               <div class="ui-subtitle-block ui-subtitle-block_form">
-                USER DATA
+                <i class="fa fa-user" style="font-size:36px;"></i> USER DATA
               </div>
               <i class="decor-brand"></i>
             </div>
           </div>
           <!-- Start Of UI Implementation -->
           <div class="main main-raised">
-            <div class="profile-content" style="text-align: center;">
+            <div class="profile-content" >
               <div class="container">
                 <div class="row">
                   <div class="col-md-6 ml-auto mr-auto">
@@ -224,16 +224,13 @@
                         <h3 class="title">Name: {{fname}}
                           {{lname}}</h3>
                         <h3 class="title">Age: 
-                          {{lname}} years</h3>
+                          {{age}} years</h3>
                           <h3 class="title">Gender: 
-                            {{lname}}</h3>
+                            {{gender}}</h3>
                         <h3 class="title">Email: 
-                          {{lname}}</h3>
+                          {{email}}</h3>
                         <h3 class="title">Phone: 
-                          {{lname}}</h3>
-                        
-                        <h3 class="title">
-                          {{lname}}</h3>
+                          {{phone}}</h3>
                       </div>
                     </div>
                   </div>
@@ -245,26 +242,26 @@
 
 
           <!-- end row -->
+<br>
+<br>
 
-          <div class="container">
-            <div>
-              <h4 class="title">Upload the data file and see the result!</h4>
+          <div class="container" style="background-color: palegoldenrod;">
+            <div style="padding: 20px;">
+              <h2 class="title"><i class="fa fa-heartbeat"></i> Upload the data file and see the result!</h2>
             </div>
-          
-          
           <form class="form-appointment ui-form" method="post" enctype="multipart/form-data" action="/upload">
             {% csrf_token %}
             <div class="row">
               <div class="col-md-10 col-md-offset-1">
-                <p style="font-family: sans-serif; font-weight: 1002; color: brown;">
-                  Upload the data file in form of .csv .
-                </p>
               </div>
               <div class="col-md-10 col-md-offset-1">
+                <h3>Upload File here!(<span style="font-family: sans-serif; font-weight: 1002; color: brown;">
+                  .csv files
+                </span>)</h3>
                 <div class="input-group">
                   <input type="file" name="document" style="font-weight: 1000">
                 </div>
-                <button class="btn bg-color_primary">SUBMIT</button>
+                <button style="margin-bottom: 20px;" class="btn bg-color_primary">SUBMIT</button>
               </div>
             </div>
           </form>
@@ -276,51 +273,28 @@
     </main><!-- end main-content -->
 
 
-    <footer class="footer">
+    <footer class="footer" id="contact">
       <div class="footer__inner">
         <div class="container">
           <div class="row">
 
             <div class="col-sm-4">
               <section class="footer__section">
-                <h2 class="footer__title">About HealthCare Agency</h2>
+                <h2 class="footer__title">About Smart EncephaloGraphy</h2>
                 <i class="decor-brand decor-brand_footer"></i>
-                <p>Sed ipsum posuere nunc libero pellentesque vitae ultrices posuere. Praesent justo dui laoreet
-                  dignissim lectus etiam ipsum habitant tristique</p>
+                <p>A health care startup which aims in making the world disease free. We use machine learning algorithm to help people detect brain related disorders.</p>
                 <div class="separator_10"></div>
-                <address class="footer__contacts"><i class="footer__icon icon-pointer color_primary"></i>Plot No. 38 St.
-                  39 UpHill Town, Newyork, USA</address>
-                <p class="footer__contacts"><i class="footer__icon icon-call-in color_primary"></i>+522 234 56789 / +522
-                  234 56780</p>
+                <address class="footer__contacts"><i class="footer__icon icon-pointer color_primary"></i>Netaji Subhas University of Technology, Delhi</address>
+                <p class="footer__contacts"><i class="footer__icon icon-call-in color_primary"></i>+91 8587093204</p>
                 <a href="javascript:void(0);" class="footer__contacts"><i
-                    class="footer__icon icon-envelope-open color_primary"></i>info@healthcare-agency.org</a>
-                <a href="javascript:void(0);" class="footer__contacts"><i
-                    class="footer__icon icon_globe-2 color_primary"></i>www.healthcareagency.org</a>
+                    class="footer__icon icon-envelope-open color_primary"></i>SmartEEG.care@gmail.com</a>
+                
               </section>
             </div>
 
 
             <div class="col-sm-4">
-              <section class="footer__section">
-                <h2 class="footer__title">Opening Hours</h2>
-                <i class="decor-brand decor-brand_footer"></i>
-                <table class="footer__table">
-                  <tbody>
-                    <tr>
-                      <td>Monday - Friday</td>
-                      <td>08:00am - 10:00pm</td>
-                    </tr>
-                    <tr>
-                      <td>Saturday - Sunday</td>
-                      <td>09:00am - 06:00pm</td>
-                    </tr>
-                    <tr>
-                      <td>Emergency Services</td>
-                      <td>24 hours Open</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </section>
+              
               <section class="footer__section">
                 <h2 class="footer__title">Helpful Links</h2>
                 <i class="decor-brand decor-brand_footer"></i>

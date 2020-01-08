@@ -3,535 +3,374 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HEALTHCARE Agency</title>
-<link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon.png' %}" />
-<link href="{% static 'css/master.css' %}" rel="stylesheet ">
-<link rel="stylesheet" href="{% static 'plugins/iview/css/iview.css' %} " type='text/css' media='all' />
-<link rel="stylesheet" href="{% static 'plugins/iview/css/skin/style.css' %} " type='text/css' media='all' />
-<script type="text/javascript" src="{% static 'js/jquery-1.11.1.min.js' %} "></script>
-<script src= "{% static 'js/jquery-migrate-1.2.1.js' %} " ></script>
-<script src="{% static 'js/jquery-ui.min.js' %} "></script>
-<script src="{% static 'js/bootstrap-3.1.1.min.js' %} "></script>
-<script src="{% static 'js/modernizr.custom.js' %} "></script>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HEALTHCARE Agency</title>
+  <link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon.png' %}" />
+  <link href="{% static 'css/master.css' %}" rel="stylesheet ">
+  <link rel="stylesheet" href="{% static 'plugins/iview/css/iview.css' %} " type='text/css' media='all' />
+  <link rel="stylesheet" href="{% static 'plugins/iview/css/skin/style.css' %} " type='text/css' media='all' />
+  <script type="text/javascript" src="{% static 'js/jquery-1.11.1.min.js' %} "></script>
+  <script src="{% static 'js/jquery-migrate-1.2.1.js' %} "></script>
+  <script src="{% static 'js/jquery-ui.min.js' %} "></script>
+  <script src="{% static 'js/bootstrap-3.1.1.min.js' %} "></script>
+  <script src="{% static 'js/modernizr.custom.js' %} "></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-<div class="layout-theme animated-css"  data-header="sticky" data-header-top="200"  >
+  <div class="layout-theme animated-css" data-header="sticky" data-header-top="200">
 
 
-  <!-- HEADER -->
-  <div class="header">
-    <div class="container">
-      <div class="header-inner">
-        <div class="row">
-          
-          <div class="col-md-8 col-xs-12">
-            <div class="header-block">
-             
-              <span class="header-label header-label_2 bg-color_second color_white">
-              <a href="/register" class="color_white" href="javascript:void(0);"><i class="icon-header icon-book-open"></i><span class="helper">Register/Login</span></a></span>
+    <!-- HEADER -->
+    <div class="header">
+      <div class="container">
+        <div class="header-inner">
+          <div class="row">
+
+            <div class="col-md-8 col-xs-12">
+              <div class="header-block">
+
+                <span class="header-label header-label_2 bg-color_second color_white">
+                  <a href="/register" class="color_white" href="javascript:void(0);"><i
+                      class="icon-header icon-book-open"></i><span class="helper">Register/Login</span></a></span>
+              </div>
+              <form class="hidden-md hidden-lg text-center" id="search-global-mobile" method="get">
+                <input type="text" value="" id="search-mobile" name="s">
+                <button type="submit"><i class="icon fa fa-search"></i></button>
+              </form>
             </div>
-            <form class="hidden-md hidden-lg text-center" id="search-global-mobile" method="get">
-              <input type="text" value="" id="search-mobile" name="s" >
-              <button type="submit"><i class="icon fa fa-search"></i></button>
-            </form>
+          </div>
+        </div><!-- end header-inner-->
+      </div><!-- end container-->
+
+      <div class="top-nav ">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12  col-xs-12">
+              <div class="navbar yamm ">
+                <div class="navbar-header hidden-md  hidden-lg  hidden-sm ">
+                  <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1"
+                    class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span
+                      class="icon-bar"></span></button>
+                  <a href="#" class="navbar-brand">Menu</a> </div>
+                <div id="navbar-collapse-1" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav">
+                    <li><a href="#">HOME </a> </li>
+                    <li><a href=""></a> </li>
+                    <li><a href="/register">EEG FORM </a> </li>
+                    <li><a href="#contact">CONTACT </a> </li>
+                  </ul>
+                  <form id="search-global-menu" class="hidden-xs hidden-sm" method="get">
+                    <input type="text" value="" id="search" name="s">
+                    <button type="submit"><i class="icon-magnifier"></i></button>
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div><!-- end header-inner-->
-    </div><!-- end container-->
+      </div>
+      <!--end top-nav -->
+    </div><!-- HEADER END -->
 
-    <div class="top-nav ">
+
+
+    <section class="advantages wow fadeInUp" data-wow-delay="1.5s" style="background-color: palegoldenrod;">
       <div class="container">
         <div class="row">
-          <div class="col-md-12  col-xs-12">
-            <div class="navbar yamm " >
-              <div class="navbar-header hidden-md  hidden-lg  hidden-sm ">
-                <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                <a href="#" class="navbar-brand">Menu</a> </div>
-              <div id="navbar-collapse-1" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                  <li><a href="#"  >HOME </a> </li>
-                  <li><a href=""  ></a> </li>
-                  <li><a href="/register"  >EEG FORM </a> </li>
-                   <li><a href=""  >CONTACT </a> </li>
-                </ul>
-                <form id="search-global-menu" class="hidden-xs hidden-sm" method="get">
-                  <input type="text" value="" id="search" name="s" >
-                  <button type="submit"><i class="icon-magnifier"></i></button>
-                </form>
-              </div>
+          <div class="separator_20"></div>
+          <div class="col-xs-12">
+            <h1 class="ui-title-block">Welcome to <strong class="font-weight_600">Smart Encephalo</strong><span
+                class="font-weight-norm color_primary">Graphy</span></h1>
+            <div class="ui-subtitle-block">A place where HealthCare meets AI!. <p>Our Team care about you & your
+                family’s health</p>
             </div>
           </div>
-        </div>
-      </div>
-    </div><!--end top-nav -->
-  </div><!-- HEADER END -->
-
-
-
-  <section class="advantages wow fadeInUp" data-wow-delay="1.5s">
-    <div class="container">
-      <div class="row">
-        <div class="separator_20"></div>
-        <div class="col-xs-12">
-          <h1 class="ui-title-block">Welcome to <strong class="font-weight_600">SEG</strong><span class="font-weight-norm color_primary">AGENCY</span></h1>
-          <div class="ui-subtitle-block">Our Team care about you & your family’s health</div>
-        </div>
-        <section class="advantages__inner col-md-4">
-          <i class="icon flaticon-medical51 color_second"></i>
-          <h2 class="ui-title-inner">HealthCare Professionals</h2>
-          <i class="decor-brand"></i>
-          <p class="ui-text text-center">Sed posuere nunc libero pellentesque vitae ultrices posuere. Praesent justo aoreet dignissim lectus etiam ipsum habitant tristique</p>
-          <a class="btn btn_small" href="javascript:void(0);">LEARN MORE</a>
-        </section>
-        <section class="advantages__inner col-md-4">
-          <i class="icon flaticon-medical109 color_second"></i>
-          <h2 class="ui-title-inner">Medical Excellence</h2>
-          <i class="decor-brand"></i>
-          <p class="ui-text text-center">Sed posuere nunc libero pellentesque vitae ultrices posuere. Praesent justo aoreet dignissim lectus etiam ipsum habitant tristique</p>
-          <a class="btn btn_small" href="javascript:void(0);">LEARN MORE</a>
-        </section>
-        <section class="advantages__inner col-md-4">
-          <i class="icon flaticon-healthcare6 color_second"></i>
-          <h2 class="ui-title-inner">Latest Technologies</h2>
-          <i class="decor-brand"></i>
-          <p class="ui-text text-center">Sed posuere nunc libero pellentesque vitae ultrices posuere. Praesent justo aoreet dignissim lectus etiam ipsum habitant tristique</p>
-          <a class="btn btn_small" href="javascript:void(0);">LEARN MORE</a>
-        </section>
-      </div><!-- end row -->
-    </div><!-- end container -->
-  </section><!-- end advantages -->
-
-
-  <div class="block-hourse block-hourse_full bg bg_1 bg_transparent wow zoomIn" data-wow-delay="1s">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="block-hourse__inner block-hourse__inner_first">
-            <p class="block-hourse__text"><i class="icon icon-note"></i>Need a Doctor for Check-up?</p>
-            <p class="block-hourse__title">JUST MAKE AN APPOINTMENT</p>
-            <a class="btn bg-color_primary" href="javascript:void(0);">GET AN APPOINTMENT</a>
-          </div>
-        </div>
-        <section class="col-md-6">
-          <div class="block-hourse__inner block-hourse__inner_second">
-            <div class="block-hourse__title-table"><i class="icon icon-clock"></i>OPENING HOURS</div>
-            <table>
-              <tbody>
-                <tr>
-                  <td>Monday - Friday</td>
-                  <td><span class="line-bottom"></span></td>
-                  <td>08:00am - 10:00pm</td>
-                </tr>
-                <tr>
-                  <td>Saturday - Sunday</td>
-                  <td><span class="line-bottom"></span></td>
-                  <td>09:00am - 06:00pm</td>
-                </tr>
-                <tr>
-                  <td>Emergency Services</td>
-                  <td><span class="line-bottom"></span></td>
-                  <td>24 hours Open</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-      </div><!-- end row -->
-    </div><!-- end container -->
-  </div><!-- end block-hourse -->
-
-
-
-  <section class="section bg bg_2 bg_transparent text-center">
-  
-  <div class="icon-tabs-wrapper">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-           <h2 class="ui-title-block color_white">Why <strong>Choose Us</strong></h2>
-          <div class="ui-subtitle-block no-spacing">You have a number of reasons to choose us!</div>
-        </div>
-        <div class="icon-tabs">
-          <div class="col-md-6 wow bounceInLeft">
-            <ul class="list-icons ">
-              <li class="active ">
-              <a href="#icontab1" aria-controls="icontab1" role="tab" data-toggle="tab"><span class="icon-round bg-color_second helper "><i class="icon fa fa-ambulance"></i></span></a></li>
-              <li> <a href="#icontab2" aria-controls="icontab2"  role="tab" data-toggle="tab"><span class="icon-round bg-color_second helper"><i class="icon fa fa-heartbeat"></i></span></a></li>
-              <li> <a href="#icontab3" aria-controls="icontab3"  role="tab" data-toggle="tab"><span class="icon-round bg-color_second helper"><i class="icon fa fa-hospital-o"></i></span></a></li>
-              <li> <a href="#icontab4" aria-controls="icontab4"  role="tab" data-toggle="tab"><span class="icon-round bg-color_second helper"><i class="icon fa fa-user-md"></i></span></a></li>
-              <li> <a href="#icontab5" aria-controls="icontab5"  role="tab" data-toggle="tab"><span class="icon-round bg-color_second helper"><i class="icon fa fa-shield"></i></span></a></li>
-            </ul>
-          
-          </div>
-          <div class="col-md-6 text-right wow bounceInRight"> 
-            
-            <!-- Tab panes -->
-            <div class="tab-content">
-              <div role="tabpanel" class="tab-pane active" id="icontab1"><img src="{% static 'media/530x270/1.jpg' %}" height="270" width="530" alt="Foto">
-              
-              <div class="tab-info">
-              
-                <p class="title-small">COMMITMENT – We fulfill our promises!</p>
-            <p class="ui-text text-center color_light-grey">Sed posuere nunc libero pellentesque vitae ultrices posuere. Praesent justo laoreet dignissim lectus etiam ipsum habitant tristique cras augue ipsum pharetra scelerisq ueac mollis vel metus sed ipsum donec.</p>
-            
-            </div>
-              
-              </div>
-              <div role="tabpanel" class="tab-pane" id="icontab2"><img src="{% static 'media/530x270/2.jpg' %}"  alt="Foto">
-              
-              <div class="tab-info">
-              
-                <p class="title-small">Nunc  mollis ligula aliquet!</p>
-            <p class="ui-text text-center color_light-grey">Justo laoreet dignis sim lectus duic etiamd ipsum habitant tristique nam est. Donec venenatis leo eu varius curus da metus nuc placerat cursus In sodales purus non nisi.  Suspendisse justo elit vulputate vel sodales sit amet convallis vel dolor.</p>
-            
-            </div>
-              
-              </div>
-              <div role="tabpanel" class="tab-pane" id="icontab3"><img src="{% static 'media/530x270/3.jpg' %}"  alt="Foto">
-              
-              
-              <div class="tab-info">
-              
-                <p class="title-small">Pellentesque sem class aptent</p>
-            <p class="ui-text text-center color_light-grey">Justo laoreet dignis sim lectus duic etiamd ipsum habitant tristique nam est. Donec venenatis leo eu varius curus da metus nuc placerat cursus In sodales purus non nisi. Aliquam orci lacus, mattis nec ornare sed</p>
-            
-            </div>
-            
-            
-            </div>
-              <div role="tabpanel" class="tab-pane" id="icontab4"><img src="{% static 'media/530x270/4.jpg' %}"  alt="Foto">
-              
-              <div class="tab-info">
-              
-                <p class="title-small">Donec id sapien sed ipsum</p>
-            <p class="ui-text text-center color_light-grey">Justo laoreet dignis sim lectus duic etiamd ipsum habitant tristique nam est. Donec venenatis leo eu varius curus da metus nuc placerat cursus In sodales purus non nisi. </p>
-            
-            </div>
-            
-            </div>
-              <div role="tabpanel" class="tab-pane" id="icontab5"><img src="{% static 'media/530x270/5.jpg' %}"  alt="Foto">
-              
-              <div class="tab-info">
-              
-                <p class="title-small">Why Primary Health Care</p>
-            <p class="ui-text text-center color_light-grey">Aliquam orci lacus, mattis nec ornare sed, varius eget, turpis. Donec eget massa velit interdum interdum. Cras vehicula, pede a viverra varius pede sapien commodo turpis et blandit ut nisi. Eonec pede</p>
-            
-            </div>
-            
-            
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end row --> 
-    </div>  </div>
-    
-  </section><!-- end bl_2-col_with-fig -->
-
-
-  <div class="section-large">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 wow bounceInLeft" data-wow-delay="1s">
-          <h2 class="ui-title-block ui-title-block_small">Hospital <span>Departments</span></h2>
-          <div class="panel-group accordion" id="accordion">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <a class="btn-collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse-1"><i class="icon fa"></i></a>
-                  <h3 class="panel-title">Emergancy / Critical Care</h3>
-                </div>
-                <div id="collapse-1" class="panel-collapse collapse in">
-                  <div class="panel-body">
-                    <img src="{% static 'media/120x125/1.jpg' %}" height="125" width="120" alt="Foto">
-                    <p class="ui-text">Craesent justo laoreet dignissim lectus etiam ipsum habitan tristique nam est. Donec venenatis leo eu varius cursus ma metus adipiscing ante orb placerat volutpat diam uspendise vel sed ipsum justo mattis.</p>
-                    <a href="javascript:void(0);" class="link">LEARN MORE</a>
-                  </div>
-                </div>
-              </div>
-              <div class="panel">
-                <div class="panel-heading">
-                  <a class="btn-collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse-2"><i class="icon fa"></i></a>
-                  <h3 class="panel-title">Dental Clinic</h3>
-                </div>
-                <div id="collapse-2" class="panel-collapse collapse">
-                  <div class="panel-body">
-                    <img src="{% static 'media/120x125/1.jpg' %}" height="125" width="120" alt="Foto">
-                    <p class="ui-text">Craesent justo laoreet dignissim lectus etiam ipsum habitan tristique nam est. Donec venenatis leo eu varius cursus ma metus adipiscing ante orb placerat volutpat diam uspendise vel sed ipsum justo mattis.</p>
-                    <a href="javascript:void(0);" class="link">LEARN MORE</a>
-                  </div>
-                </div>
-              </div>
-              <div class="panel">
-                <div class="panel-heading">
-                  <a class="btn-collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse-3"><i class="icon fa"></i></a>
-                  <h3 class="panel-title">Allergic Diseases</h3>
-                </div>
-                <div id="collapse-3" class="panel-collapse collapse">
-                  <div class="panel-body">
-                    <img src="{% static 'media/120x125/1.jpg' %}" height="125" width="120" alt="Foto">
-                    <p class="ui-text">Craesent justo laoreet dignissim lectus etiam ipsum habitan tristique nam est. Donec venenatis leo eu varius cursus ma metus adipiscing ante orb placerat volutpat diam uspendise vel sed ipsum justo mattis.</p>
-                    <a href="javascript:void(0);" class="link">LEARN MORE</a>
-                  </div>
-                </div>
-              </div>
-              <div class="panel">
-                <div class="panel-heading">
-                  <a class="btn-collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse-4"><i class="icon fa"></i></a>
-                  <h3 class="panel-title">Neurology</h3>
-                </div>
-                <div id="collapse-4" class="panel-collapse collapse">
-                  <div class="panel-body">
-                    <img src="{% static 'media/120x125/1.jpg' %}" height="125" width="120" alt="Foto">
-                    <p class="ui-text">Craesent justo laoreet dignissim lectus etiam ipsum habitan tristique nam est. Donec venenatis leo eu varius cursus ma metus adipiscing ante orb placerat volutpat diam uspendise vel sed ipsum justo mattis.</p>
-                    <a href="javascript:void(0);" class="link">LEARN MORE</a>
-                  </div>
-                </div>
-              </div>
-            
-            </div>
-        </div>
-
-        <div class="col-md-6 wow bounceInRight" data-wow-delay="1s">
-          <h2 class="ui-title-block ui-title-block_small"><span>We Diagnose & Treat </span><span>Unique Problems in Our Research Center</span></h2>
-          <p class="ui-text">Nulla tristique ipsum in quam. Integer ac elit. Duis turpis faucibus non, mollis quis fringilla ero Praesent tempor molestie metus. Aliquam massa sapien. Aenean cursus mattis sapien. Integer elementum nisi ac volutpat vestibulum enim.</p>
-          <a class="link_on-youtube" href="https://www.youtube.com/watch?v=NnuaHGW1cwU&rel=0" rel="prettyPhoto" title="YouTube"><span class="btn bg-color_second"><i class="icon icon-camcorder"></i>VIDEO TOUR</span><img src="media/570x360/1.jpg" height="360" width="570" alt="Video youtube"></a>
-        </div>
-      </div>
-    </div>
-  </div><!-- end section -->
-
-
-  <div class="banner banner_small bg bg_3 bg_transparent wow zoomIn" data-wow-delay="1s">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-7 col-md-offset-1">
-          <div class="banner__wrap pull-left">
-            <p class="banner__title">Are you ready to buy this template?</p>
-            <p class="banner__text">Egestas dolor erat vamus suscipit sed ipsum estduin vitae nised volutpat</p>
-          </div>
-        </div>
-        <div class="col-md-3 col-md-offset-1">
-          <a class="btn btn pull-right" href="javascript:void(0);">PURCHASE NOW <span class="btn-plus">+</span></a>
-        </div>
-      </div>
-    </div>
-  </div><!-- end banner -->
-
-  <section class="section-large">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <h2 class="ui-title-block text-center">Services <strong>We offer</strong></h2>
-          <div class="ui-subtitle-block text-center">Purus sapien consequat vitae sagittis facilisis</div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="list-services">
-          <div class="col-md-4 list-services__item wow bounceInRight" data-wow-delay="1s">
-            <span class="icon-round bg-color_second helper"><i class="icon flaticon-eye64"></i></span>
-            <div class="list-services__inner border_btm">
-              <h3 class="list-services__title">Eye Care Solutions</h3>
-              <p class="ui-text">Justo laoreet dignissim lectus duic etiam ipsum habitant tristique nam est. Donec venenatis leo eu varius</p>
-            </div>
-          </div>
-          <div class="col-md-4 list-services__item wow bounceInRight" data-wow-delay="1.5s">
-            <span class="icon-round bg-color_second helper"><i class="icon flaticon-tooth9"></i></span>
-            <div class="list-services__inner border_btm">
-              <h3 class="list-services__title">Dental Surgery</h3>
-              <p class="ui-text">Justo laoreet dignissim lectus duic etiam ipsum habitant tristique nam est. Donec venenatis leo eu varius</p>
-            </div>
-          </div>
-          <div class="col-md-4 list-services__item wow bounceInRight" data-wow-delay="2s">
-            <span class="icon-round bg-color_second helper"><i class="icon flaticon-pipette2"></i></span>
-            <div class="list-services__inner border_btm">
-              <h3 class="list-services__title">Blood Tests & X-Rays</h3>
-              <p class="ui-text">Justo laoreet dignissim lectus duic etiam ipsum habitant tristique nam est. Donec venenatis leo eu varius</p>
-            </div>
-          </div>
-          <div class="col-md-4 list-services__item wow bounceInRight" data-wow-delay="2.5s">
-            <span class="icon-round bg-color_second helper"><i class="icon flaticon-scalpel3"></i></span>
-            <div class="list-services__inner border_btm">
-              <h3 class="list-services__title">Health Care Solutions</h3>
-              <p class="ui-text">Justo laoreet dignissim lectus duic etiam ipsum habitant tristique nam est. Donec venenatis leo eu varius</p>
-            </div>
-          </div>
-          <div class="col-md-4 list-services__item wow bounceInRight" data-wow-delay="3s">
-            <span class="icon-round bg-color_second helper"><i class="icon flaticon-syrup1"></i></span>
-            <div class="list-services__inner border_btm">
-              <h3 class="list-services__title">Medicines & Drug Store</h3>
-              <p class="ui-text">Justo laoreet dignissim lectus duic etiam ipsum habitant tristique nam est. Donec venenatis leo eu varius</p>
-            </div>
-          </div>
-          <div class="col-md-4 list-services__item wow bounceInRight" data-wow-delay="3.5s">
-            <span class="icon-round bg-color_second helper"><i class="icon flaticon-pharmacy5"></i></span>
-            <div class="list-services__inner border_btm">
-              <h3 class="list-services__title">General Prescriptions</h3>
-              <p class="ui-text">Justo laoreet dignissim lectus duic etiam ipsum habitant tristique nam est. Donec venenatis leo eu varius</p>
-            </div>
-          </div>
-          <div class="clearfix"></div>
-          <a class="btn btn_small" href="javascript:void(0);">LOAD MORE</a>
-        </div><!-- end list-services -->
-      </div>
-    </div>
-  </section><!-- end section -->
-
-  <div class="banner bg bg_3 bg_transparent wow zoomIn" data-wow-delay="1s">
-    <div class="container">
-     
-      <div class="row">
-        <div class="col-xs-12">
-          <ul class="list-progress">
-            <li>
-              <span class="icon-round icon-round_small bg-color_second helper"><i class="icon fa fa-user-md"></i></span>
-              <div class="info">
-                <span class="chart" data-percent="126"> <span class="percent"></span> </span>
-                <span class="label-chart">Hospital Rooms</span>
-              </div>
-            </li>
-            <li>
-              <span class="icon-round icon-round_small bg-color_second helper"><i class="icon fa fa-hospital-o"></i></span>
-              <div class="info">
-                <span class="chart" data-percent="510"> <span class="percent"></span> </span>
-                <span class="label-chart">Qualified Staff</span>
-              </div>
-            </li>
-            <li>
-              <span class="icon-round icon-round_small bg-color_second helper"><i class="icon fa fa-heartbeat"></i></span>
-              <div class="info">
-                <span class="chart" data-percent="6200"> <span class="percent"></span> </span>
-                <span class="label-chart">Satisfied Patients</span>
-              </div>
-            </li>
-            <li>
-              <span class="icon-round icon-round_small bg-color_second helper"><i class="icon fa fa-shield"></i></span>
-              <div class="info">
-                <span class="chart" data-percent="513"> <span class="percent"></span> </span>
-                <span class="label-chart">Doctors Medals</span>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div><!-- end banner -->
-
-  <footer class="footer">
-    <div class="footer__inner">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-sm-4">
-            <section class="footer__section">
-              <h2 class="footer__title">About HealthCare Agency</h2>
-              <i class="decor-brand decor-brand_footer"></i>
-              <p>Sed ipsum posuere nunc libero pellentesque vitae ultrices posuere. Praesent justo dui laoreet dignissim lectus etiam ipsum habitant tristique</p>
-              <address class="footer__contacts"><i class="footer__icon icon-pointer color_primary"></i>Plot No. 38 St. 39 UpHill Town, Newyork, USA</address>
-              <p class="footer__contacts"><i class="footer__icon icon-call-in color_primary"></i>+522 234 56789  / +522 234 56780</p>
-              <p class="footer__contacts"><i class="footer__icon icon-envelope-open color_primary"></i>info@healthcare-agency.org</p>
-            </section>
-           
-          </div>
-
-          <section class="footer__section col-sm-4">
-            <h2 class="footer__title">Recent Tweets</h2>
-            <i class="decor-brand decor-brand_footer"></i>
-            <section class="tweets">
-              <h3 class="tweets__title"><i class="footer__icon icon-social-twitter color_primary"></i>@ HealthCare Agency</h3>
-              <p class="tweets__text">Sed ipsum posuere nunc libero pellentesque vitae ultrices posuere. Praesent justo dui laoreet dignissim.</p>
-              <span class="tweets__time">3 hours ago</span>
-            </section>
-            <section class="tweets">
-              <h3 class="tweets__title"><i class="footer__icon icon-social-twitter color_primary"></i>@ HealthCare Agency</h3>
-              <p class="tweets__text">Sed ipsum posuere nunc libero pellentesque vitae ultrices posuere. Praesent justo dui laoreet dignissim.</p>
-              <span class="tweets__time">3 hours ago</span>
-            </section>
-            <section class="tweets">
-              <h3 class="tweets__title"><i class="footer__icon icon-social-twitter color_primary"></i>@ HealthCare Agency</h3>
-              <p class="tweets__text">Sed ipsum posuere nunc libero pellentesque vitae ultrices posuere. Praesent justo dui laoreet dignissim.</p>
-              <span class="tweets__time">3 hours ago</span>
-            </section>
+          <section class="advantages__inner col-md-4">
+            <i class="icon flaticon-medical51 color_second"></i>
+            <h2 class="ui-title-inner">HealthCare and Tech Professionals</h2>
+            <i class="decor-brand"></i>
+            <p class="ui-text text-center">We have a team of best doctors and data scientist to help the society.</p>
+            <a class="btn btn_small" href="javascript:void(0);">LEARN MORE</a>
           </section>
-
-          <section class="footer__section col-sm-4">
-            <h2 class="footer__title">Contact Form</h2>
-            <i class="decor-brand decor-brand_footer"></i>
-            <form class="form" role="form">
-              <div class="form-group">
-                <input class="form-control" type="text" placeholder="Full Name">
-                <input class="form-control" type="email" placeholder="Email address">
-                <textarea class="form-control" rows="4" placeholder="Message"></textarea>
-                <input class="btn bg-color_primary pull-right" type="submit" value="SEND NOW">
-              </div>
-            </form>
+          <section class="advantages__inner col-md-4">
+            <i class="icon flaticon-medical109 color_second"></i>
+            <h2 class="ui-title-inner">Medical Excellence</h2>
+            <i class="decor-brand"></i>
+            <p class="ui-text text-center">Our Machine Learning Algorithm gives upto 97% of accurate results which is
+              very helpful in disease detection</p>
+            <a class="btn btn_small" href="javascript:void(0);">LEARN MORE</a>
+          </section>
+          <section class="advantages__inner col-md-4">
+            <i class="icon flaticon-healthcare6 color_second"></i>
+            <h2 class="ui-title-inner">Latest Technologies</h2>
+            <i class="decor-brand"></i>
+            <p class="ui-text text-center">We continously work on latest technologies and research papers to keep
+              updating our technologies.</p>
+            <a class="btn btn_small" href="javascript:void(0);">LEARN MORE</a>
           </section>
         </div><!-- end row -->
       </div><!-- end container -->
-    </div><!-- end footer__inner -->
+    </section><!-- end advantages -->
 
-    <div class="footer__menu clearfix">
+
+    <div class="block-hourse block-hourse_full bg bg_1 bg_transparent wow zoomIn" data-wow-delay="1s">
       <div class="container">
-        <a class="logo pull-left">
-          <img class="logo__img" src="{% static 'img/logo_footer.png' %}" height="44" width="270" alt="Logo">
-        </a>
-        <ul class="pull-right">
-          <li><a href="javascript:void(0);">HOME</a></li>
-          <li><a href="javascript:void(0);">ABOUT</a></li>
-          <li><a href="javascript:void(0);">SERVICES</a></li>
-          <li><a href="javascript:void(0);">PAGES</a></li>
-          <li><a href="javascript:void(0);">GALLERY</a></li>
-          <li><a href="javascript:void(0);">BLOG</a></li>
-          <li><a href="javascript:void(0);">SHOP</a></li>
-          <li><a href="javascript:void(0);">CONTACT</a></li>
-        </ul>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="block-hourse__inner block-hourse__inner_first">
+              <p class="block-hourse__text"><i class="icon icon-note"></i>Check whether you have a Bipolar disorder or
+                not!</p>
+              <p class="block-hourse__title">JUST REGISTER HERE</p>
+              <a class="btn bg-color_primary" href="/register">REGISTER</a>
+            </div>
+          </div>
+          <section class="col-md-6">
+            <div class="block-hourse__inner block-hourse__inner_second">
+              <div class="block-hourse__title-table"><i class="icon icon-clock"></i>What are Bipolar Disorders?</div>
+              <td>
+                Bipolar disorder, formerly called manic depression, is a mental health condition that causes extreme
+                mood swings that include emotional highs (mania or hypomania) and lows (depression).
+
+                When you become depressed, you may feel sad or hopeless and lose interest or pleasure in most
+                activities. When your mood shifts to mania or hypomania (less extreme than mania), you may feel
+                euphoric, full of energy or unusually irritable. These mood swings can affect sleep, energy, activity,
+                judgment, behavior and the ability to think clearly.
+              </td>
+            </div>
+          </section>
+        </div><!-- end row -->
       </div><!-- end container -->
-    </div><!-- end footer__menu -->
-
-    <div class="footer__bottom">
-      <span class="copyright">© Copyrights 2020 EEG Agency</span>
-      <ul class="social-links">
-        <li><a target="_blank" href="https://www.facebook.com/"><i class="social_icons social_facebook_square"></i></a></li>
-        <li class=""><a target="_blank" href="https://twitter.com/"><i class="social_icons social_twitter_square"></i></a></li>
-        <li><a target="_blank" href="https://www.google.com/"><i class="social_icons social_googleplus_square"></i></a></li>
-        <li><a target="_blank" href="https://www.linkedin.com/"><i class="social_icons social_linkedin_square"></i></a></li>
-        <li><a target="_blank" href="https://www.youtube.com/"><i class="social_icons social_youtube_square"></i></a></li>
-        <li class="li-last"><a target="_blank" href="https://instagram.com/"><i class="social_icons social_instagram_square"></i></a></li>
-      </ul>
-    </div>
-  </footer>
+    </div><!-- end block-hourse -->
 
 
-</div><!-- end layout-theme -->
 
-<span class="scroll-top bg-color_second"> <i class="fa fa-angle-up"> </i></span>
+    <section class="section bg bg_2 bg_transparent text-center">
 
-<!--HOME SLIDER-->
-<script src="{% static 'plugins/iview/js/iview.js' %}"></script>
- <script src="{% static 'plugins/rendro-easy-pie-chart/dist/jquery.easypiechart.min.js' %}"></script>
-<!-- SCRIPTS -->
-<script type="text/javascript" src="{% static 'plugins/isotope/jquery.isotope.min.js' %}"></script>
-<script src="{% static 'js/waypoints.min.js' %}"></script>
-<script src="{% static 'plugins/bxslider/jquery.bxslider.min.js' %}"></script>
-<script src="{% static 'plugins/prettyphoto/js/jquery.prettyPhoto.js' %}"></script>
-<script src="{% static 'http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js' %}"></script>
-<script src="{% static 'plugins/datetimepicker/jquery.datetimepicker.js' %}"></script>
-<script src="{% static 'plugins/jelect/jquery.jelect.js' %}"></script>
-<script src="{% static 'plugins/nouislider/jquery.nouislider.all.min.js' %}"></script>
+      <div class="icon-tabs-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2 class="ui-title-block color_white">Why <strong>Choose Us</strong></h2>
+              <div class="ui-subtitle-block no-spacing">You have a number of reasons to choose us!</div>
+            </div>
+            <div class="icon-tabs">
+              <div class="col-md-6 wow bounceInLeft">
+                <ul class="list-icons ">
+                  <li class="active ">
+                    <a href="#icontab1" aria-controls="icontab1" role="tab" data-toggle="tab"><span
+                        class="icon-round bg-color_second helper "><i class="icon fa fa-ambulance"></i></span></a></li>
+                  <li> <a href="#icontab2" aria-controls="icontab2" role="tab" data-toggle="tab"><span
+                        class="icon-round bg-color_second helper"><i class="icon fa fa-heartbeat"></i></span></a></li>
+                  <li> <a href="#icontab3" aria-controls="icontab3" role="tab" data-toggle="tab"><span
+                        class="icon-round bg-color_second helper"><i class="icon fa fa-hospital-o"></i></span></a></li>
+                  <li> <a href="#icontab4" aria-controls="icontab4" role="tab" data-toggle="tab"><span
+                        class="icon-round bg-color_second helper"><i class="icon fa fa-user-md"></i></span></a></li>
+                </ul>
 
-<!-- Loader -->
-<script src="{% static 'plugins/loader/js/classie.js' %}"></script>
-<script src="{% static 'plugins/loader/js/pathLoader.js' %}"></script>
-<script src="{% static 'plugins/loader/js/main.js' %}"></script>
-<script src="{% static 'js/classie.js' %}"></script>
-<!--THEME-->
-<script src="{% static 'js/cssua.min.js' %}"></script>
-<script src="{% static 'js/wow.min.js' %}"></script>
-<script src="{% static 'js/custom.js' %}"></script>
+              </div>
+              <div class="col-md-6 text-right wow bounceInRight">
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane active" id="icontab1"><img
+                      src="{% static 'media/530x270/1.jpg' %}" height="270" width="530" alt="Foto">
+
+                    <div class="tab-info">
+
+                      <p class="title-small">COMMITMENT – We fulfill our promises!</p>
+                      <p class="ui-text text-center color_light-grey">We help people to detect as well as cure many
+                        brain related diseases which are rarely detectd by normal methods and are dangerous for our
+                        health.</p>
+
+                    </div>
+
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="icontab2"><img src="{% static 'media/530x270/2.jpg' %}"
+                      alt="Foto">
+
+                    <div class="tab-info">
+
+                      <p class="title-small">Health is Wealth</p>
+                      <p class="ui-text text-center color_light-grey">We totally abide to this rule and we beleive that
+                        your health is treasure which needs to be in safe hands.</p>
+
+                    </div>
+
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="icontab3"><img src="{% static 'media/530x270/3.jpg' %}"
+                      alt="Foto">
+
+
+                    <div class="tab-info">
+
+                      <p class="title-small">No Age LIMIT!</p>
+                      <p class="ui-text text-center color_light-grey">Our algorithms can detect the diseases of any
+                        person with and age group</p>
+
+                    </div>
+
+
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="icontab4"><img src="{% static 'media/530x270/4.jpg' %}"
+                      alt="Foto">
+
+                    <div class="tab-info">
+
+                      <p class="title-small">24*7 Support!</p>
+
+
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end row -->
+        </div>
+      </div>
+
+    </section><!-- end bl_2-col_with-fig -->
+
+
+
+
+    <section class="section-large">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2 class="ui-title-block text-center">Services <strong>We offer</strong></h2>
+            <div class="ui-subtitle-block text-center">24x7 Support</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="list-services">
+            <div class="col-md-4 list-services__item wow bounceInRight" data-wow-delay="1s">
+              <span class="icon-round bg-color_second helper"><i class="icon flaticon-eye64"></i></span>
+              <div class="list-services__inner border_btm">
+                <h3 class="list-services__title">Brain Care Solutions</h3>
+
+              </div>
+            </div>
+            <div class="col-md-4 list-services__item wow bounceInRight" data-wow-delay="1.5s">
+              <span class="icon-round bg-color_second helper"><i class="icon flaticon-pharmacy5"></i></span>
+              <div class="list-services__inner border_btm">
+                <h3 class="list-services__title">General Prescriptions</h3>
+
+              </div>
+            </div>
+            <div class="col-md-4 list-services__item wow bounceInRight" data-wow-delay="2s">
+              <span class="icon-round bg-color_second helper"><i class="icon flaticon-pipette2"></i></span>
+              <div class="list-services__inner border_btm">
+                <h3 class="list-services__title">Blood Tests & X-Rays</h3>
+
+              </div>
+            </div>
+            <div class="col-md-4 list-services__item wow bounceInRight" data-wow-delay="2.5s">
+              <span class="icon-round bg-color_second helper"><i class="icon flaticon-scalpel3"></i></span>
+              <div class="list-services__inner border_btm">
+                <h3 class="list-services__title">Health Care Solutions</h3>
+
+              </div>
+            </div>
+            <div class="col-md-4 list-services__item wow bounceInRight" data-wow-delay="3s">
+              <span class="icon-round bg-color_second helper"><i class="icon flaticon-syrup1"></i></span>
+              <div class="list-services__inner border_btm">
+                <h3 class="list-services__title">Medicines & Drug Store</h3>
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+    </section><!-- end section -->
+
+  
+
+    <footer class="footer" id="contact">
+      <div class="footer__inner">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-sm-4">
+              <section class="footer__section">
+                <h2 class="footer__title">About Smart EncephaloGraphy</h2>
+                <i class="decor-brand decor-brand_footer"></i>
+                <p>A health care startup which aims in making the world disease free. We use machine learning algorithm
+                  to help people detect brain related disorders.</p>
+                <div class="separator_10"></div>
+                <address class="footer__contacts"><i class="footer__icon icon-pointer color_primary"></i>Netaji Subhas
+                  University of Technology, Delhi</address>
+                <p class="footer__contacts"><i class="footer__icon icon-call-in color_primary"></i>+91 8587093204</p>
+                <a href="javascript:void(0);" class="footer__contacts"><i
+                    class="footer__icon icon-envelope-open color_primary"></i>SmartEEG.care@gmail.com</a>
+
+              </section>
+            </div>
+
+
+            <div class="col-sm-4">
+
+              <section class="footer__section">
+                <h2 class="footer__title">Helpful Links</h2>
+                <i class="decor-brand decor-brand_footer"></i>
+                <ul>
+                  <li>How to avoid diseases</li>
+                  <li>Become healthy in 5 steps</li>
+                  <li>Fruits Juices for a Day</li>
+                </ul>
+              </section>
+            </div>
+
+            <section class="footer__section col-sm-4">
+              <h2 class="footer__title">Contact Form</h2>
+              <i class="decor-brand decor-brand_footer"></i>
+              <form class="form" role="form">
+                <div class="form-group">
+                  <input class="form-control" type="text" placeholder="Full Name">
+                  <input class="form-control" type="email" placeholder="Email address">
+                  <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+                  <input class="btn bg-color_primary pull-right" type="submit" value="SEND NOW">
+                </div>
+              </form>
+            </section>
+          </div><!-- end row -->
+        </div><!-- end container -->
+      </div><!-- end footer__inner -->
+    </footer>
+
+  </div><!-- end layout-theme -->
+
+  <span class="scroll-top bg-color_second"> <i class="fa fa-angle-up"> </i></span>
+
+  <!--HOME SLIDER-->
+  <script src="{% static 'plugins/iview/js/iview.js' %}"></script>
+  <script src="{% static 'plugins/rendro-easy-pie-chart/dist/jquery.easypiechart.min.js' %}"></script>
+  <!-- SCRIPTS -->
+  <script type="text/javascript" src="{% static 'plugins/isotope/jquery.isotope.min.js' %}"></script>
+  <script src="{% static 'js/waypoints.min.js' %}"></script>
+  <script src="{% static 'plugins/bxslider/jquery.bxslider.min.js' %}"></script>
+  <script src="{% static 'plugins/prettyphoto/js/jquery.prettyPhoto.js' %}"></script>
+  <script src="{% static 'http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js' %}"></script>
+  <script src="{% static 'plugins/datetimepicker/jquery.datetimepicker.js' %}"></script>
+  <script src="{% static 'plugins/jelect/jquery.jelect.js' %}"></script>
+  <script src="{% static 'plugins/nouislider/jquery.nouislider.all.min.js' %}"></script>
+
+  <!-- Loader -->
+  <script src="{% static 'plugins/loader/js/classie.js' %}"></script>
+  <script src="{% static 'plugins/loader/js/pathLoader.js' %}"></script>
+  <script src="{% static 'plugins/loader/js/main.js' %}"></script>
+  <script src="{% static 'js/classie.js' %}"></script>
+  <!--THEME-->
+  <script src="{% static 'js/cssua.min.js' %}"></script>
+  <script src="{% static 'js/wow.min.js' %}"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
 </body>
+
 </html>
