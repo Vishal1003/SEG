@@ -1,7 +1,8 @@
 from django.shortcuts import render
-from .models import User
 from django.core.files.storage import FileSystemStorage
-# Create your views here.
+
+import EEG as eg
+import pandas as pd
 
 
 def index(request):
@@ -35,4 +36,5 @@ def upload(request):
         fs = FileSystemStorage()
         name = fs.save(uploaded_file.name, uploaded_file)
         context['url'] = fs.url(name)
+        eg.predict(pd.read_csv(url))
     return render(request, 'result.html', context)
